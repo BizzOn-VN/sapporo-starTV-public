@@ -1,0 +1,255 @@
+.sapporo-item-icon-tv{
+	position: absolute;
+	bottom: 10%;
+	left: 4%;
+	width: 10%;
+	min-width: 100px;
+	cursor: pointer;
+	z-index: 10;
+}
+.sapporo-item-icon-tv img{
+	width: 100%;
+}
+.bg-opacicy-popup-star-tv{
+	background: #000;
+	width: 100%;
+	height: 100%;
+	opacity: 0.4;
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	z-index: 8;
+	display: none;
+}
+.bg-opacicy-popup-star-tv.active{
+	display: block;
+}
+@media screen and (max-width: 992px) {
+	.sapporo-item-icon-tv{
+		left: 50%;
+		transform: translateX(-50%);
+		min-width: 145px;
+		bottom: 8%;
+		width: 14%;
+	}
+}
+@media screen and (max-width: 768px) {
+	.sapporo-item-icon-tv{
+		width: 11%;
+		min-width: 90px;
+		bottom: 9%;
+	}
+}
+
+
+
+
+
+
+.popup-star-tv{
+	background: url(../images/bg-popup.jpg) no-repeat;
+	background-size: cover;
+	position: absolute;
+	left:12.2%;
+	bottom: 12%;
+	width: 46.5%;
+	z-index:9;
+	border-radius: 7px;
+	padding:2% 2% 2% 2%;
+	opacity: 0;
+	visibility: hidden;
+	transform: scale(0.3);
+}
+.popup-star-tv.active{
+	opacity: 1;
+	visibility: visible;
+	transform: scale(1);
+	transition-duration: 0.5s;
+}
+.popup-star-tv .ico-close{
+	min-width: 60px;
+	width: 15%;
+	position: absolute;
+	right: -2%;
+	top: -5%;
+	cursor: pointer;
+}
+.popup-star-tv .title{
+	font-size: calc(4vw + 5px);
+	font-family: "UTM Bebas";
+	font-weight: 700;
+	color: #de8b36;
+	display: block;
+	line-height: 0.9em;
+}
+.popup-star-tv .title span{
+	font-size: calc(2vw + 3px);
+	font-weight: 400;
+}
+.popup-star-tv .caption{
+	font-size: calc(1.1vw + 2px);
+	font-family: "Gotham";
+	font-weight: 500;
+	color: #000;
+	text-transform: uppercase;
+	margin: -8px 0px 5px;
+	display: block;
+}
+.inner-popup-star-tv{
+	position: relative;
+
+}
+.popup-star-tv .left-content{
+	width: 60%;
+	display: table-cell;
+}
+.popup-star-tv .left-content .thumnail img{
+	width: 100%;
+}
+.popup-star-tv .right-content{
+	padding-bottom: 30px;
+	position: relative;
+	padding-left: 5%;
+	width: 40%;
+	display: table-cell;
+	vertical-align: top;
+}
+
+.popup-star-tv .right-content .read-more{
+	position: absolute;
+	
+	
+	bottom: 0px;
+	right: 0px;
+	width: 90%;
+	text-align: center;
+	left: 50%;
+	transform: translateX(-50%);
+	
+	
+
+}
+.popup-star-tv .right-content .read-more a{
+	text-transform: uppercase;
+	font-family: "UTM Bebas";
+	font-weight: 700;
+	text-align: center;
+	transition-duration: 0.5s;
+	padding: 5px 20px;
+	font-size: calc(1.4vw + 1px);
+	color: #fff;
+	display: block;
+	white-space: nowrap;
+	margin: 0 auto;
+	background: #f8aa52;
+	border-radius: 20px;
+}
+.popup-star-tv .right-content .read-more a:hover{
+	text-decoration: none;
+}
+.popup-star-tv .right-content .read-more a.active-read-more{
+	animation: heartBeat-read-more 2.5s infinite;
+
+}
+
+
+
+@keyframes heartBeat-read-more {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+
+  10% {
+    -webkit-transform: scale(1.13);
+    transform: scale(1.13);
+  }
+
+  20% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+
+  30% {
+    -webkit-transform: scale(1.13);
+    transform: scale(1.13);
+  }
+
+  40% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+
+.popup-star-tv .right-content .text{
+	
+	color: #000;
+	font-size: calc(1.1vw + 1px);
+	font-family: "Gotham";
+	font-weight: 400;
+}
+.popup-star-tv .right-content .text span{
+	display: block;
+}
+@media screen and (min-width: 992px) {
+	.popup-star-tv{
+		bottom: 13.5% !important;
+	}
+	
+}
+@media screen and (max-width: 992px) {
+	.popup-star-tv.active{
+		transform: scale(1) translateX(-50%);
+	}
+	.popup-star-tv{
+		width: 92%;
+		max-width: 550px;
+		bottom: 47%;
+		left: 50%;
+		transform: translate(-50%,0%);
+		padding: 3% 3% 3% 3%;
+	}
+	.popup-star-tv .title{
+		font-size: calc(7.2vw + 12px);
+	}
+	.popup-star-tv .title span{
+		font-size: calc(2.9vw + 7px);
+	}
+	.popup-star-tv .caption{
+		font-size: calc(1.5vw + 5px);
+		    margin: -1% 0px 2%;
+	}
+	.popup-star-tv .right-content .text{
+		font-size: calc(1.3vw + 5px);
+		
+	}
+	.popup-star-tv .right-content{
+		padding-left: 5%;
+	}
+	.popup-star-tv .right-content .read-more{
+		max-width: 140px;
+	}
+	.popup-star-tv .right-content .read-more a{
+		font-size: calc(1.9vw + 5px);
+		width: 100%;
+		
+		padding: 4px 20px;
+	}
+	.popup-star-tv .ico-close{
+		top: -2%;
+		right: -1%;
+	}
+}
+@media screen and (max-width: 576px) {
+	.popup-star-tv .right-content .read-more a{
+		max-width: 100px;
+	}
+}
+
+
+

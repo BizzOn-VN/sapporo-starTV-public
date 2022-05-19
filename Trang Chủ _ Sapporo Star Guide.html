@@ -119,6 +119,7 @@
 <link href="https://www.sapporo-starguide.com//static/css/position.css?" media="screen" rel="stylesheet" type="text/css" />
 <link href="https://www.sapporo-starguide.com//static/css/sapporo3c-town.css?" media="screen" rel="stylesheet" type="text/css" />
 <link href="https://www.sapporo-starguide.com//static/css/delivery-icon.css?" media="screen" rel="stylesheet" type="text/css" />
+<link href="./css/home-tv-icon.css?" media="screen" rel="stylesheet" type="text/css" />
         
 		<!-- Google Tag Manager -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-146592879-4"></script>
@@ -300,6 +301,9 @@ _paq.push(['setSiteId', '2']);
         <a id="pimcore-navigation-renderer-menu-242" class=" main" href="/vi_VN/ngay-tan-huong">Ngày Tận Hưởng</a>
     </li>
     <li>
+        <a id="pimcore-navigation-renderer-menu-242" class=" main" href="/vi_VN/ngay-tan-huong">Star TV</a>
+    </li>
+    <li>
         <a id="pimcore-navigation-renderer-menu-243" class=" main" href="/vi_VN/star-guide">Về Star Guide</a>
     </li>
     <li>
@@ -457,6 +461,78 @@ _paq.push(['setSiteId', '2']);
                         <img class="sapporo-item-hover" src="https://www.sapporo-starguide.com//static/images/sapporo/4-items/item-4/hover.png" />
                     </a>
                 </div>
+                <div class="sapporo-item-icon-tv" data-id="#popup-star-tv-1">
+                	<img src="./images/star-tv-icon.png" alt="">
+                </div>
+                <div class="bg-opacicy-popup-star-tv">
+                	
+                </div>
+                <div class="popup-star-tv" id="popup-star-tv-1">
+                	<div class="inner-popup-star-tv">
+                		<img class="ico-close" src="./images/ico-close-td03.png" alt="">
+                		<strong class="title">ĂN ĐỂ UỐNG <span>tập 1</span></strong>
+                			<span class="caption">Sapporo Premium x Dustin Phúc Nguyễn</span>
+                		<div class="left-content">
+                			
+                			<div class="thumnail">
+                				<img src="./images/popup-thumb/thumb-1.jpg" alt="">
+                			</div>
+                		</div>
+                		<div class="right-content">
+                			<div class="text">
+                				<span>Theo chân Sapporo và Dustin tìm ra món Ăn hết sẩy để khoảnh khắc Uống thêm tận hưởng.</span>
+                			</div>
+                			<div class="read-more">
+                				<a href="#">xem thêm</a>
+                			</div>
+                		</div>	
+                	</div>
+                </div>
+                <div class="popup-star-tv" id="popup-star-tv-2">
+                	<div class="inner-popup-star-tv">
+                		<img class="ico-close" src="./images/ico-close-td03.png" alt="">
+                		<strong class="title">100% tếu <span>tập 1</span></strong>
+                			<span class="caption">Sapporo Premium x Sài Gòn Tếu</span>
+                		<div class="left-content">
+                			
+                			<div class="thumnail">
+                				<img src="./images/popup-thumb/thumb-2.jpg" alt="">
+                			</div>
+                		</div>
+                		<div class="right-content">
+                			<div class="text">
+                				<span>100% lâng lâng</span>
+                				<span>100% tận hưởng,</span>
+                				<span>100% Tếu.</span>
+                				<span>Cười sảng khoái cùng Sapporo & Sài Gòn Tếu!</span>
+                			</div>
+                			<div class="read-more">
+                				<a href="#">xem thêm</a>
+                			</div>
+                		</div>	
+                	</div>
+                </div>
+                <div class="popup-star-tv" id="popup-star-tv-3">
+                	<div class="inner-popup-star-tv">
+                		<img class="ico-close" src="./images/ico-close-td03.png" alt="">
+                		<strong class="title">điểm tận hưởng <span>tập 1</span></strong>
+                			<span class="caption">Sapporo Premium x Ăn Sập Sài Gòn</span>
+                		<div class="left-content">
+                			
+                			<div class="thumnail">
+                				<img src="./images/popup-thumb/thumb-3.jpg" alt="">
+                			</div>
+                		</div>
+                		<div class="right-content">
+                			<div class="text">
+                				<span>Hành trình ăn sành - uống chuẩn cùng Ăn Sập Sài Gòn tại quán đối tác của Sapporo.</span>
+                			</div>
+                			<div class="read-more">
+                				<a href="#">xem thêm</a>
+                			</div>
+                		</div>	
+                	</div>
+                </div>
             </div>
         </div>
 
@@ -480,6 +556,113 @@ _paq.push(['setSiteId', '2']);
 <script src="https://www.sapporo-starguide.com//static/js/sapporo-home.js?"></script>
 <script src="https://www.sapporo-starguide.com//static/js/service-worker/sapporo-sw.js?"></script>
 <script src="https://www.sapporo-starguide.com//static/js/frontend.js?"></script>
+<script type="text/javascript">
+	function set_position(){
+		var offsets = $(window).height()-$('.sapporo-item-icon-tv').offset().top-$(".sapporo-item-icon-tv").height()/5;
+		$(".popup-star-tv").css("bottom",offsets);
+	}
+	set_position();
+	window.onresize = function() {
+	    set_position();
+	}
+	window.addEventListener("resize", function(event) {
+	    set_position();
+	})
+	function click_sapporo_item_icon_tv(){
+		$(".sapporo-item-icon-tv").click(function(){
+			var data_id=$(this).attr("data-id");
+			// if($(".popup-star-tv").hasClass("active")){
+			// 	$(".bg-opacicy-popup-star-tv").removeClass("active");
+			// }else{
+				$(".bg-opacicy-popup-star-tv").addClass("active");
+			// }
+			$(data_id).addClass("active");
+		})
+		
+	}
+	click_sapporo_item_icon_tv();
+
+
+	function hover_sapporo_item_icon_tv(){
+		$(".sapporo-item-icon-tv").click(function(){
+			var data_id=$(this).attr("data-id");
+				$(".bg-opacicy-popup-star-tv").addClass("active");
+				$(data_id).addClass("active");
+		})
+		$( ".sapporo-item-icon-tv" ).hover(
+		  function() {
+		    var data_id=$(this).attr("data-id");
+		    $(".bg-opacicy-popup-star-tv").addClass("active");
+		    $(data_id).addClass("active");
+		  }, function() {
+		    $(".bg-opacicy-popup-star-tv").removeClass("active");
+		    $(".popup-star-tv").removeClass("active");
+		    $( ".popup-star-tv" ).hover(
+		      function() {
+		        var data_id=$(".sapporo-item-icon-tv").attr("data-id");
+		        $(".bg-opacicy-popup-star-tv").addClass("active");
+		        $(data_id).addClass("active");
+		      }, function() {
+		//       	$(".bg-opacicy-popup-star-tv").removeClass("active");
+		// $(".popup-star-tv").removeClass("active");
+		      }
+		    );
+		  }
+		);
+	}
+	hover_sapporo_item_icon_tv();
+
+	
+
+	$(".popup-star-tv .ico-close").click(function(){
+		$(".bg-opacicy-popup-star-tv").removeClass("active");
+		$(".popup-star-tv").removeClass("active");
+	})
+
+
+	$(document).mouseup(function(e) 
+	{
+	    var container = $(".popup-star-tv");
+	    if (!container.is(e.target) && container.has(e.target).length === 0) 
+	    {
+	        $(".bg-opacicy-popup-star-tv").removeClass("active");
+	        $(".popup-star-tv").removeClass("active");
+	    }
+	});
+
+
+	$( ".sapporo-item-icon-tv" ).hover(
+	  function() {
+	    var data_id=$(this).attr("data-id");
+	    $(".bg-opacicy-popup-star-tv").addClass("active");
+	    $(data_id).addClass("active");
+	  }, function() {
+	    $(".bg-opacicy-popup-star-tv").removeClass("active");
+	    $(".popup-star-tv").removeClass("active");
+	    $( ".popup-star-tv" ).hover(
+	      function() {
+	        var data_id=$(".sapporo-item-icon-tv").attr("data-id");
+	        $(".bg-opacicy-popup-star-tv").addClass("active");
+	        $(data_id).addClass("active");
+	      }, function() {
+	//       	$(".bg-opacicy-popup-star-tv").removeClass("active");
+	// $(".popup-star-tv").removeClass("active");
+	      }
+	    );
+	  }
+	);
+
+
+	    $( ".popup-star-tv .right-content .read-more a" ).hover(
+	      function() {
+	        $(this).addClass("active-read-more");
+	      }, function() {
+			$(this).removeClass("active-read-more");	
+	      }
+	    );
+
+	
+</script>
         
 
                     
