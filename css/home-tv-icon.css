@@ -103,11 +103,20 @@
 	width: 60%;
 	display: table-cell;
 }
-.popup-star-tv .left-content .thumnail img{
-	width: 100%;
+.popup-star-tv .left-content .video-star-tv{
+	position: relative;
+	padding-bottom: 56.25%;
 }
+.popup-star-tv .left-content .video-star-tv iframe{
+	width: 100% !important;
+	height: 100% !important;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+
 .popup-star-tv .right-content{
-	padding-bottom: 30px;
+	padding-bottom: 45px;
 	position: relative;
 	padding-left: 5%;
 	width: 40%;
