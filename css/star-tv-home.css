@@ -86,7 +86,7 @@
 	font-weight: bold;
     font-family: "UTM Bebas";
     color: #de8b36;
-    line-height: 1.1em;
+    line-height: 1.2em;
 }
 .name-lchk{
 	font-size: 18.75px;
@@ -133,6 +133,10 @@
 	}
 	.headline_star_tv .text .title{
 		font-size: 16vw;
+	}
+	.headline_star_tv .text .title.diem-tan-huong{
+		font-size: 12vw;
+		margin-left: -5px;
 	}
 	.name-lchk{
 		display: none;
