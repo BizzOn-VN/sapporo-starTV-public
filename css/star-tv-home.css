@@ -381,7 +381,7 @@
 	right: 0px;
 	width: 180px;
 	margin: 0 auto 0px auto;
-	bottom: 35px;
+	bottom: 0px;
 }
 
 .hytPlayerWrap{
@@ -422,22 +422,30 @@
     background-size: 70px 70px;
     background-image: url("https://i.ya-webdesign.com/images/play-button-png-16.png");  
 }
+.delivery-icon a{
+	display: inline-block;
+}
 
-.back-to-top{
+/*.back-to-top{
     right:auto !important;
     bottom: 25px !important;
     left: 50%;
     transform: translatex(-50%);
   }
 @media (max-width: 768px){
-
   .back-to-top{
     right:auto !important;
     bottom: 55px !important;
     left: 50%;
     transform: translateX(-50%);
   }
+}*/
+.back-to-top{
+	position: relative;
+	bottom: 0px;
+	left:50%;
+	transform: translateX(-50%);
+	margin-bottom: 5px;
 }
-
 
 
