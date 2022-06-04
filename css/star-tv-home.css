@@ -381,7 +381,7 @@
 	right: 0px;
 	width: 180px;
 	margin: 0 auto 0px auto;
-	bottom: 0px;
+	bottom: 35px;
 }
 
 .hytPlayerWrap{
@@ -423,7 +423,21 @@
     background-image: url("https://i.ya-webdesign.com/images/play-button-png-16.png");  
 }
 
+.back-to-top{
+    right:auto !important;
+    bottom: 25px !important;
+    left: 50%;
+    transform: translatex(-50%);
+  }
+@media (max-width: 768px){
 
+  .back-to-top{
+    right:auto !important;
+    bottom: 55px !important;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
 
 
 
