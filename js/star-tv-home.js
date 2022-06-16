@@ -87,7 +87,7 @@ $( ".video-star-tv" ).each(function( index ) {
     }
   })
   function set_max_width_drop_down(){
-    var set_max_width_drop_down=$(".block-three-videos .col-md-4").width() - 20;
+    var set_max_width_drop_down=$(".block-three-videos .blk-col").width() - 20;
     $(".block-three-videos .ui.dropdown>.text").css("max-width",set_max_width_drop_down);
 
   }
@@ -102,8 +102,8 @@ $( ".video-star-tv" ).each(function( index ) {
 
 
  $(".block-three-videos .thumb-nail").click(function(){
-    $(".block-three-videos .col-md-4").removeClass("active");
-    $(this).parent(".col-md-4").addClass("active");
+    $(".block-three-videos .blk-col").removeClass("active");
+    $(this).parent(".blk-col").addClass("active");
     var data_src=$(this).attr("data-src");
     $(".video-star-tv").removeClass("active-video");
     $(data_src).addClass("active-video");
